@@ -1,0 +1,31 @@
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  line-height: (2 * $base-spacing);
+  text-align: center;
+  padding: $base-spacing;
+
+  ul {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline-block;
+
+      a {
+        display: inline-block;
+        color: $white;
+        margin: $base-spacing;
+
+        &:hover {
+          color: $medium-gray;
+        }
+      }
+    }
+  }
+}

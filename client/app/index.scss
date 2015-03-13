@@ -1,7 +1,40 @@
+@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic);
+
+// ------------------------------------------------
+// COLORS
+// ------------------------------------------------
+$light-gray: #eee;
+$dark-gray: #222;
+$medium-gray: #aaa;
+$white: #fff;
+$amber: #FFC107;
+
+// ------------------------------------------------
+// VARIABLES
+// ------------------------------------------------
+$base-spacing: 1em;
+$base-font-size: 17px;
+$font-stack: 'Arimo', 'Arial', sans-serif;
+
+html, body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
 body {
+  color: $light-gray;
+  background-color: $dark-gray;
   margin: 0;
+  padding: $base-spacing;
+  border: (0.5 * $base-spacing) solid $medium-gray;
+  font-size: $base-font-size;
+  font-family: $font-stack;
 }
 
 a {
   text-decoration: none;
+  color: $amber;
 }
+
+// injector
+// endinjector
