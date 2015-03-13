@@ -1,10 +1,11 @@
-angular.module "smashingBlockses", ['ngAnimate', 'ngTouch', 'ngResource', 'ui.router']
-  .config ($stateProvider, $urlRouterProvider) ->
-    $stateProvider
-      .state "home",
-        url: "/",
-        templateUrl: "app/main/main.html",
-        controller: "MainCtrl"
+'use strict'
 
+angular.module "smashingBlockses", [
+  'ngAnimate',
+  'ngTouch',
+  'ngResource',
+  'ui.router',
+  'smashingBlockses.main'
+]
+  .config ($urlRouterProvider) ->
     $urlRouterProvider.otherwise '/'
-
