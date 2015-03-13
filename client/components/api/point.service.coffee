@@ -1,7 +1,7 @@
 'use strict'
 
 angular.module 'smashingBlockses'
-.factory 'Point', ($resource) ->
+.factory 'Point', ($resource, API_BASE_URL) ->
 
   resource = $resource(API_BASE_URL + 'points/:id',
     { id: '@id' },
