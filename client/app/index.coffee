@@ -8,6 +8,6 @@ angular.module 'smashingBlockses', [
   'smashingBlockses.main',
   'smashingBlockses.points'
 ]
-  .config ($urlRouterProvider) ->
-    $urlRouterProvider.otherwise '/'
+.config ($urlRouterProvider) ->
+  $urlRouterProvider.otherwise '/'
 .constant 'API_BASE_URL', '/api/'

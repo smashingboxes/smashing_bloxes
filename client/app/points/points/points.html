@@ -1,4 +1,9 @@
 <h1>Points of Interest</h1>
+<ul class='points-of-interest-list'>
+  <li ng-repeat="point in points">
+    <a ng-href="#/points/{{ point.id }}">{{ point.name }}</a>
+  </li>
+</ul>
 
 <h3>Add New Point</h3>
 <form class='points-form'>
