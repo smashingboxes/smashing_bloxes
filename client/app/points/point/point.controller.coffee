@@ -1,4 +1,4 @@
 'use strict'
 
 angular.module 'smashingBlockses'
-  .controller 'PointsCtrl', ($scope) ->
+.controller 'PointCtrl', ($scope) ->

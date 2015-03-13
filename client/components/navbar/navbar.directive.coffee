@@ -1,3 +1,5 @@
+'use strict'
+
 angular.module 'smashingBlockses'
   .directive 'sbNavbar', ->
     restrict: 'E'
