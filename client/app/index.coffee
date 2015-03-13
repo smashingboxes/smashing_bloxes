@@ -1,11 +1,12 @@
 'use strict'
 
-angular.module "smashingBlockses", [
+angular.module 'smashingBlockses', [
   'ngAnimate',
   'ngTouch',
   'ngResource',
   'ui.router',
-  'smashingBlockses.main'
+  'smashingBlockses.main',
+  'smashingBlockses.points'
 ]
   .config ($urlRouterProvider) ->
     $urlRouterProvider.otherwise '/'
