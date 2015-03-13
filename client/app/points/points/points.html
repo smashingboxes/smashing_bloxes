@@ -1,1 +1,21 @@
 <h1>Points of Interest</h1>
+
+<h3>Add New Point</h3>
+<form class='points-form'>
+  <div class='form-group'>
+    <label for='name'>Name:</label>
+    <input type='text' ng-model='point.name'>
+  </div>
+  <br/>
+  <div class='form-group'>
+    <label for='coordinates'>Coordinates:</label>
+    <input type='text' placeholder='XXX, YYY, ZZZ' ng-model='point.coordinates'>
+  </div>
+  <br />
+  <div class='form-group'>
+    <label form='image'>Picture:</label>
+    <input type='file' ng-model='point.image'>
+  </div>
+  <br />
+  <button class='btn btn-success' ng-href='#/' ng-click='createPoint()'>Submit</button>
+</form>
