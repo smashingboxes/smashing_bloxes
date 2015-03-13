@@ -10,3 +10,4 @@ angular.module 'smashingBlockses', [
 ]
   .config ($urlRouterProvider) ->
     $urlRouterProvider.otherwise '/'
+.constant 'API_BASE_URL', '/api/'
