@@ -1,7 +1,8 @@
 'use strict'
 
 angular.module 'smashingBlockses'
-.directive 'sbNavbar', ->
+.directive 'sbPoint', ->
   restrict: 'E'
-  templateUrl: 'components/navbar/navbar.html'
+  templateUrl: 'components/point/point.html'
+  scope: { point: '=' }
   controller: ($scope, $element, $attrs) ->
