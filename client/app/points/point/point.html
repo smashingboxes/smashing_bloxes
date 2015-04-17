@@ -1,1 +1,12 @@
-<h1>Individual Point</h1>
+<h1>{{ point.name }}</h1>
+<div class='point-details'>
+  <img class='point-image' ng-src="{{ point.image }}">
+  <ul>
+    <li>
+      {{ point.description }}
+    </li>
+    <li>
+      Coordinates: {{ point.coordinates }}
+    </li>
+  </ul>
+</div>

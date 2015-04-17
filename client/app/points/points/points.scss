@@ -1,0 +1,14 @@
+.points-grid {
+  @include column(2/3);
+  .point-card {
+    display: inline-block;
+    margin: $base-spacing;
+  }
+}
+
+.points-form {
+  @include column(1/3);
+  .form-group {
+    padding: (0.5* $base-spacing);
+  }
+}
