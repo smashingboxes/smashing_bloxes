@@ -1,12 +1,10 @@
 .nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
+  display: block;
   line-height: (2 * $base-spacing);
   text-align: center;
   padding: $base-spacing;
+  font-size: 0.85em;
+  margin-bottom: $base-spacing;
 
   ul {
     display: inline-block;
@@ -19,11 +17,11 @@
 
       a {
         display: inline-block;
-        color: $white;
+        color: $black;
         margin: $base-spacing;
 
         &:hover {
-          color: $medium-gray;
+          color: $light-gray;
         }
       }
     }

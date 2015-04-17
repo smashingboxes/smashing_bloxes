@@ -1,4 +1,6 @@
-<a ng-href='#/points/{{point.id}}'>
-  <img ng-src='{{ point.image }}'>
-  <div class='point-name'>{{ point.name }}</div>
+<a ng-href="#/points/{{point.id}}">
+  <img ng-src="{{ point.image }}" />
+  <h4 class="point-name"
+    ng-bind="point.name">
+  </h4>
 </a>
