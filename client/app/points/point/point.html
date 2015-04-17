@@ -1,12 +1,13 @@
-<h1>{{ point.name }}</h1>
-<div class='point-details'>
-  <img class='point-image' ng-src="{{ point.image }}">
-  <ul>
-    <li>
-      {{ point.description }}
-    </li>
-    <li>
-      Coordinates: {{ point.coordinates }}
-    </li>
-  </ul>
-</div>
+<sb-container>
+  <h1 ng-bind="point.name"></h1>
+  <div class='point-details'>
+    <img class='point-image' ng-src="{{ point.image }}">
+    <ul>
+      <li ng-bind="point.description">
+      </li>
+      <li>
+        Coordinates: <span ng-bind="point.coordinates"></span>
+      </li>
+    </ul>
+  </div>
+</sb-container>

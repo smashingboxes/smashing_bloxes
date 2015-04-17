@@ -1,0 +1,19 @@
+.sb-container {
+  position: relative;
+  background-color: $medium-gray;
+  border: $base-border;
+  padding: 2em;
+  min-height: 400px;
+
+  .sb-container__inner {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    p {
+      color: $black;
+    }
+  }
+}

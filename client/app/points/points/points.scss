@@ -1,14 +1,42 @@
-.points-grid {
-  @include column(2/3);
-  .point-card {
-    display: inline-block;
-    margin: $base-spacing;
-  }
-}
+.pois {
+  padding: 0;
 
-.points-form {
-  @include column(1/3);
-  .form-group {
-    padding: (0.5* $base-spacing);
+  .pois__header {
+    text-align: center;
+  }
+
+  .pois__grid {
+    @include column(2/3);
+
+    .pois__grid__inner {
+      padding: $base-spacing;
+      text-align: center;
+    }
+
+    .pois__grid__card {
+      display: inline-block;
+      background-color: $dark-gray;
+      border: $base-border;
+      border-color: $darker-gray;
+      padding: 0.5 * $base-spacing;
+      margin: $base-spacing;
+      text-align: center;
+    }
+  }
+
+  .pois__form {
+    @include column(1/3);
+
+    .pois__form__inner {
+      margin: $base-spacing;
+      padding: $base-spacing;
+      background-color: $dark-gray;
+      border: $base-border;
+      border-color: $light-gray;
+    }
+
+    .pois__form__group {
+      padding: (0.5* $base-spacing);
+    }
   }
 }

@@ -1,27 +1,54 @@
-<h1>Points of Interest</h1>
-<div class='points-grid'>
-  <div class='point-card' ng-repeat='point in points'>
-    <sb-point point='point'></ng-point>
-  </div>
-</div>
+<sb-container class="pois">
+  <h1 class="pois__header">
+    Points of Interest
+  </h1>
 
-<h3>Add New Location</h3>
-<form class='points-form'>
-  <div class='form-group'>
-    <label for='name'>Name:</label>
-    <input type='text' ng-model='point.name'>
+  <div class="pois__grid">
+    <div class="pois__grid__inner">
+      <div class="pois__grid__card" ng-repeat="point in points">
+        <sb-point point="point">
+        </sb-point>
+      </div>
+    </div>
   </div>
-  <div class='form-group'>
-    <label for='description'>Description:</label>
-    <input type='text' ng-model='point.description'>
+
+  <div class="pois__form">
+    <div class="pois__form__inner">
+      <h3>Add New Location</h3>
+
+      <form>
+        <div class="pois__form__group">
+          <label for="name">
+            Name:
+          </label>
+          <input type="text" ng-model="point.name">
+        </div>
+        <div class="pois__form__group">
+          <label for="description">
+            Description:
+          </label>
+          <input type="text" ng-model="point.description">
+        </div>
+        <div class="pois__form__group">
+          <label for="coordinates">
+            Coordinates:
+          </label>
+          <input type="text"
+            placeholder="XXX, YYY, ZZZ"
+            ng-model="point.coordinates">
+        </div>
+        <div class="pois__form__group">
+          <label form="image">
+            Picture:
+          </label>
+          <input type="file" ng-model="point.image">
+        </div>
+        <button class="btn btn-success"
+          ng-href="#/"
+          ng-click="createPoint()">
+          Submit
+        </button>
+      </form>
+    </div>
   </div>
-  <div class='form-group'>
-    <label for='coordinates'>Coordinates:</label>
-    <input type='text' placeholder='XXX, YYY, ZZZ' ng-model='point.coordinates'>
-  </div>
-  <div class='form-group'>
-    <label form='image'>Picture:</label>
-    <input type='file' ng-model='point.image'>
-  </div>
-  <button class='btn btn-success' ng-href='#/' ng-click='createPoint()'>Submit</button>
-</form>
+</sb-container>

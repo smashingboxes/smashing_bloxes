@@ -1,12 +1,14 @@
-@import url(http://fonts.googleapis.com/css?family=Arimo:400,700,400italic);
+@import url(http://fonts.googleapis.com/css?family=Press+Start+2P);
 @import 'client/bower_components/jeet/scss/jeet/index';
 
 // ------------------------------------------------
 // COLORS
 // ------------------------------------------------
 $light-gray: #eee;
-$dark-gray: #222;
 $medium-gray: #aaa;
+$dark-gray: #888;
+$darker-gray: #222;
+$black: #111;
 $white: #fff;
 $amber: #FFC107;
 
@@ -14,8 +16,9 @@ $amber: #FFC107;
 // VARIABLES
 // ------------------------------------------------
 $base-spacing: 1em;
-$base-font-size: 17px;
-$font-stack: 'Arimo', 'Arial', sans-serif;
+$base-font-size: 14px;
+$font-stack: 'Press Start 2P', monospace;
+$base-border: 3px solid $dark-gray;
 
 html, body {
   height: 100%;
@@ -24,12 +27,13 @@ html, body {
 
 body {
   color: $light-gray;
-  background-color: $dark-gray;
+  background-color: $darker-gray;
   margin: 0;
   padding: $base-spacing;
-  border: (0.5 * $base-spacing) solid $medium-gray;
   font-size: $base-font-size;
   font-family: $font-stack;
+  background-image: url('../assets/images/hero-bg.jpg');
+  background-size: cover;
 }
 
 a {
