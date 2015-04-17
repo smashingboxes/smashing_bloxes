@@ -6,7 +6,8 @@ angular.module 'smashingBlockses', [
   'ngResource',
   'ui.router',
   'smashingBlockses.main',
-  'smashingBlockses.points'
+  'smashingBlockses.points',
+  'smashingBlockses.map'
 ]
 .config ($urlRouterProvider) ->
   $urlRouterProvider.otherwise '/'
